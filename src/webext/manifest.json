@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Replace bookmarks URL",
+  "description": "__MSG_extensionDescription__",
+  "version": "1.0.0",
+  "developer": {
+    "name": "wantora",
+    "url": "https://github.com/wantora/replace-bookmarks-url"
+  },
+  "applications": {
+    "gecko": {
+      "id": "replace-bookmarks-url@wantora.github.io"
+    }
+  },
+  "default_locale": "en",
+  "permissions": [
+    "bookmarks",
+    "tabs"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "__MSG_browserActionLabel__"
+  }
+}

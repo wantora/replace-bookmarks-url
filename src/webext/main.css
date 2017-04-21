@@ -1,0 +1,26 @@
+input[type="text"] {
+  width: 50em;
+}
+
+.output {
+  font-family: monospace;
+  margin: 1em 0;
+  white-space: pre;
+}
+
+.output.loading {
+  background-color: #eee;
+  min-height: 5em;
+}
+
+.output ins {
+  background-color: green;
+  color: white;
+  text-decoration: none;
+}
+
+.output del {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+}

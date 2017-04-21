@@ -1,0 +1,8 @@
+{
+  "extensionDescription": {
+    "message": "This add-on provides a function to replace bookmarks URL."
+  },
+  "browserActionLabel": {
+    "message": "Replace bookmarks URL"
+  }
+}

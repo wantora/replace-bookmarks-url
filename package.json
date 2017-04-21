@@ -1,0 +1,34 @@
+{
+  "name": "replace-bookmarks-url",
+  "version": "1.0.0",
+  "author": "wantora <wantora@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/wantora/replace-bookmarks-url/issues"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.4.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "eslint": "^3.19.0",
+    "eslint-loader": "^1.7.1",
+    "npm-run-all": "^4.0.2",
+    "web-ext": "^1.9.0",
+    "webpack": "^2.4.1"
+  },
+  "homepage": "https://github.com/wantora/replace-bookmarks-url#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wantora/replace-bookmarks-url.git"
+  },
+  "scripts": {
+    "_:web-ext:build": "web-ext build --source-dir dist",
+    "_:web-ext:run": "web-ext run --source-dir dist",
+    "_:webpack:prod": "webpack --config webpack.production.config.js",
+    "_:webpack:watch": "webpack --config webpack.config.js --watch",
+    "build": "npm-run-all --silent --sequential _:webpack:prod _:web-ext:build",
+    "lint": "eslint .",
+    "start": "npm-run-all --silent --parallel --race _:webpack:watch _:web-ext:run"
+  }
+}

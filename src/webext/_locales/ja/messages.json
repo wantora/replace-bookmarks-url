@@ -1,0 +1,8 @@
+{
+  "extensionDescription": {
+    "message": "ブックマークURLを置換する機能を提供します。"
+  },
+  "browserActionLabel": {
+    "message": "ブックマークURLを置換"
+  }
+}
